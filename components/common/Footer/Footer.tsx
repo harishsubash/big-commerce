@@ -98,6 +98,8 @@ const Footer: FC<Props> = ({ className, pages }) => {
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
             <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>{process.env.BIGCOMMERCE_STOREFRONT_API_TOKEN}</span>
+            <span>{process.env.BIGCOMMERCE_STORE_API_TOKEN}</span>
           </div>
           <div className="flex items-center text-primary">
             <span className="text-primary">Crafted by</span>
